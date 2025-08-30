@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Student Buddy",
+  "version": "1.0",
+  "description": "Notes, reminders, pomodoro and quick search for students.",
+  "permissions": ["storage", "alarms", "notifications", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Student Buddy"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}

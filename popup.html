@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Buddy</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Buddy</h1>
+
+    <section class="card" id="notes-section">
+      <h2>Notes</h2>
+      <textarea id="note-input" placeholder="Write a quick note..."></textarea>
+      <button id="add-note-btn">Add Note</button>
+      <ul id="notes-list"></ul>
+    </section>
+
+    <section class="card" id="search-section">
+      <h2>Quick Search</h2>
+      <form id="search-form">
+        <input id="search-input" placeholder="Search Google..." />
+        <button type="submit">Search</button>
+      </form>
+      <div id="links">
+        <h3>Quick Links</h3>
+        <button class="link-btn" data-url="https://www.google.com">Google</button>
+        <button class="link-btn" data-url="https://en.wikipedia.org">Wikipedia</button>
+        <button class="link-btn" data-url="https://developer.mozilla.org">MDN</button>
+      </div>
+    </section>
+
+    <section class="card" id="pomodoro-section">
+      <h2>Pomodoro</h2>
+      <input id="pomodoro-minutes" type="number" min="1" value="25" />
+      <button id="start-pomodoro">Start</button>
+      <button id="cancel-pomodoro">Cancel</button>
+      <div id="pomodoro-status"></div>
+    </section>
+
+    <section class="card" id="reminder-section">
+      <h2>Reminder</h2>
+      <input id="reminder-datetime" type="datetime-local" />
+      <input id="reminder-text" placeholder="Reminder message" />
+      <button id="set-reminder-btn">Set Reminder</button>
+      <ul id="reminders-list"></ul>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
